@@ -40,7 +40,7 @@
         <span class="dx-arrow fas fa-long-arrow-alt-right carousel-control-next-icon " aria-hidden="true"></span>
     </button>
 </div>
-    <!-- First Section -->
+    <!-- Specialità -->
 <div class="container-80 text-center my-5 d-flex flex-column align-items-center">
         <h2 class="section-title m-0">Our specialities<span class="point">.</span></h2>
         <h5 class="subtitle my-2">Lorem ipsum dolor sit amet consectetur adipisicing elit.</h5>
@@ -71,7 +71,7 @@
         </li>
     </ul>
 </div>  
-    <!-- Second Section -->
+    <!-- Seconda Sezione -->
 <div class="container-80 mt-10 mb-8 bg-image">
     <div class="row align-items-center position-relative ">
         <div class="col-6">
@@ -97,7 +97,7 @@
     </div>
 </div>
     <!-- Sezione Eventi -->
-    <div class="container-fluid bg-events mt-4 position-relative">
+<div class="container-fluid bg-events my-5 position-relative">
         <div class="row centering">
             <div class="container">
                 <div class="bg-light p-5">
@@ -163,9 +163,58 @@
             </div>
             
         </div>
+</div>
+    <!-- Sezione Creative -->
+    <div class="container pt-5">
+        <div class="row">
+            <div class="container-80 d-flex">
+                <div class="col-6 pe-5">
+                    <h3 class="event-title">Creative Leader</h3>
+                    <div class="line my-3"></div>
+                    <p class="features-caption">Lorem ipsum dolor sit amet consectetur adipisicing elit. Sapiente necessitatibus velit amet illum dignissimos sit accusamus, repellat ratione illo vitae quisquam voluptate.</p>
+                    <a class="text-decoration-none text-dark fw-bolder" href="#">Read More</a>
+                </div>
+                <div class="col-6 ">
+                    <div class="progress-bar-wrapper">
+                        <div class="progress-bar-label d-flex justify-content-between">
+                            <p>Mentorship</p>
+                            <p>78%</p>
+                        </div>
+                        <div class="height-bar progress">
+                            <div class="bg-orange progress-bar" role="progressbar" style="width: 78%" aria-valuenow="50" aria-valuemin="0" aria-valuemax="100"></div>
+                        </div>
+                        <div class="progress-bar-wrapper">
+                            <div class="progress-bar-label d-flex justify-content-between">
+                                <p>Education</p>
+                                <p>95%</p>
+                            </div>
+                            <div class="height-bar progress">
+                                <div class="bg-orange progress-bar" role="progressbar" style="width: 95%" aria-valuenow="50" aria-valuemin="0" aria-valuemax="100"></div>
+                            </div>
+                        </div>
+                        <div class="progress-bar-wrapper">
+                            <div class="progress-bar-label d-flex justify-content-between">
+                                <p>Learning</p>
+                                <p>65%</p>
+                            </div>
+                            <div class="height-bar progress">
+                                <div class="bg-orange progress-bar" role="progressbar" style="width: 65%" aria-valuenow="50" aria-valuemin="0" aria-valuemax="100"></div>
+                            </div>
+                        </div>
+                        <div class="progress-bar-wrapper">
+                            <div class="progress-bar-label d-flex justify-content-between">
+                                <p>Motivation</p>
+                                <p>83%</p>
+                            </div>
+                            <div class="height-bar progress">
+                                <div class=" bg-orange progress-bar " role="progressbar" style="width: 83%" aria-valuenow="50" aria-valuemin="0" aria-valuemax="100"></div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
     </div>
-
-
 
 </main>
 </template>
@@ -322,7 +371,7 @@ cursor: pointer;
     position: absolute;
     top: 50%;
     left: 30%;
-    transform: translate(-40%, -50%);
+    transform: translate(-50%, -50%);
 }
 .title-event{
     font-size: 1.4em;
@@ -336,5 +385,11 @@ cursor: pointer;
 }
 .orange{
     color: #ff4612;
+}
+.bg-orange{
+    background-color: #ff4612!important;
+}
+.height-bar{
+    height: 0.5em!important;
 }
 </style>
