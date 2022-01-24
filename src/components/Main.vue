@@ -72,7 +72,7 @@
     </ul>
 </div>  
     <!-- Second Section -->
-<div class="container-80 mt-10 bg-image">
+<div class="container-80 mt-10 mb-8 bg-image">
     <div class="row align-items-center position-relative ">
         <div class="col-6">
             <img class="image-team" src="../assets/img/h1-img-01.jpg" alt=""> 
@@ -93,12 +93,77 @@
                     <i class="social-icon fab fa-twitter"></i>
                 </div>
             </div>
-
         </div>
-
     </div>
-    
 </div>
+    <!-- Sezione Eventi -->
+    <div class="container-fluid bg-events mt-4 position-relative">
+        <div class="row centering">
+            <div class="container">
+                <div class="bg-light p-5">
+                    <h3 class="event-title mb-5">Upcoming Events</h3>
+                    <ul class="list-unstyled">
+                        <li class="d-flex mb-5 ">
+                            <div class="data-container d-flex flex-column justify-content-center align-items-center">
+                                <p class="data">07</p>
+                                <p class="data-light">Jan 2022</p>
+                            </div>
+                            <div class="ps-3">
+                                <h4 class="title-event">Melbourne Coaching</h4>
+                                <div class="d-flex align-items-center">
+                                    <i class="far fa-clock orange"></i>
+                                <p class="m-0 ps-2">9:00am - 5:00pm, Jan 7, 2022</p>
+                                </div>
+                                <div class="d-flex align-items-center mb-2 ">
+                                    <i class="fas fa-map-marker-alt orange"></i>
+                                <p class="m-0 ps-2">Cambridge, MA 02138, USA</p>
+                                </div>
+                                <a class="text-decoration-none text-dark fw-bolder" href="#">Read More</a>
+                            </div>
+                        </li>
+                        <li class="d-flex mb-5">
+                            <div class="data-container d-flex flex-column justify-content-center align-items-center">
+                                <p class="data">11</p>
+                                <p class="data-light">Jan 2022</p>
+                            </div>
+                            <div class="ps-3">
+                                <h4 class="title-event">New York Coaching</h4>
+                                <div class="d-flex align-items-center">
+                                    <i class="far fa-clock orange"></i>
+                                <p class="m-0 ps-2">9:00am - 5:00pm, Jan 11, 2022</p>
+                                </div>
+                                <div class="d-flex align-items-center mb-2 ">
+                                    <i class="fas fa-map-marker-alt orange"></i>
+                                <p class="m-0 ps-2">Cambridge, MA 02138, USA</p>
+                                </div>
+                                <a class="text-decoration-none text-dark fw-bolder" href="#">Read More</a>
+                            </div>
+                        </li>
+                        <li class="d-flex mb-5">
+                            <div class="data-container d-flex flex-column justify-content-center align-items-center">
+                                <p class="data">21</p>
+                                <p  class="data-light">Jan 2022</p>
+                            </div>
+                            <div class="ps-3">
+                                <h4 class="title-event">London Coaching</h4>
+                                <div class="d-flex align-items-center">
+                                    <i class="far fa-clock orange"></i>
+                                <p class="m-0 ps-2">9:00am - 5:00pm, Jan 21, 2022</p>
+                                </div>
+                                <div class="d-flex align-items-center mb-2 ">
+                                    <i class="orange fas fa-map-marker-alt "></i>
+                                <p class="m-0 ps-2">Cambridge, MA 02138, USA</p>
+                                </div>
+                                <a class="text-decoration-none text-dark fw-bolder" href="#">Read More</a>
+                            </div>
+                            
+                        </li>
+                    </ul>
+                </div>
+            </div>
+            
+        </div>
+    </div>
 
 
 
@@ -180,7 +245,7 @@ h2{
     width: 100%;
 }
 .team{
-font-size: 2.5em;
+    font-size: 2.5em;
     color: black;
     font-family: 'Times New Roman', Times, serif;
     font-weight: 700;
@@ -208,6 +273,10 @@ font-size: 2.5em;
     top: 50%;
     transform: translate(-50%, -50%);
 }
+.social:hover{
+background-color: black;
+cursor: pointer;
+}
 .bg-image{
     background-repeat: no-repeat;
     background-position-x: 55em;
@@ -216,5 +285,56 @@ font-size: 2.5em;
 }
 .mt-10{
     padding-top: 20em;
+}
+.mb-8{
+    margin-bottom: 10em;
+}
+.bg-events{
+    height: 1000px;
+    background-image: url("../assets/img/h1-img-09.jpg");
+}
+.event-title{
+    font-size: 1.7em;
+    color: black;
+    font-family: 'Times New Roman', Times, serif;
+    font-weight: 700;
+}
+.data-container{
+    width: 80px;
+    height: 70px;
+    background-color: #ff4612;
+}
+.data{
+    color: white;
+    font-size: 1.2em;
+    margin: 0;
+    font-weight: 800;
+    font-family: 'Times New Roman', Times, serif;
+}
+.data-light{
+    color: white;
+    font-size: 1em;
+    margin: 0;
+    font-weight: 300;
+    font-family: 'Times New Roman', Times, serif;
+}
+.centering{
+    position: absolute;
+    top: 50%;
+    left: 30%;
+    transform: translate(-40%, -50%);
+}
+.title-event{
+    font-size: 1.4em;
+    color: black;
+    font-family: 'Times New Roman', Times, serif;
+    font-weight: 500;
+}
+.title-event:hover{
+    color: #ff4612;
+    cursor: pointer;
+}
+.orange{
+    color: #ff4612;
 }
 </style>

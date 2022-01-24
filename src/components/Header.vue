@@ -8,7 +8,7 @@
                 <li class="list-inline-item mx-4 nav-item">pages</li>
                 <li class="list-inline-item mx-4 nav-item">blog</li>
                 <li class="list-inline-item mx-4 nav-item">shop</li>
-                <li class="list-inline-item mx-4">events</li>
+                <li class="list-inline-item mx-4 nav-item">events</li>
                 <li class="list-inline-item mx-4 nav-item">elements</li>
                 <i class="fas fa-search list-inline-item mx-4"></i>
                 <i class="fas fa-list list-inline-item mx-4"></i>
