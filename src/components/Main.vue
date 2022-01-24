@@ -1,34 +1,106 @@
 <template>
 <main>
-<div id="carouselExampleCaptions" class="carousel slide" data-interval="false">
+    <!-- Jumbotron -->
+<div id="carouselExampleCaptions" class="carousel slide" data-bs-interval="false">
     <div class="carousel-indicators">
         <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
         <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="1" aria-label="Slide 2"></button>
     </div>
     <div class="carousel-inner">
-        <div class="carousel-item active">
-            <img src="../assets/img/rev-slider-main-home-img-02.png" class="d-block w-100" alt="...">
-            <div class="carousel-caption d-none d-md-block">
-                <h5>First slide label</h5>
-                <p>Some representative placeholder content for the first slide.</p>
+        <div class="carousel-item active position-relative">
+            <img src="../assets/img/rev-slider-main-home-img-03.jpg" class="d-block w-100" alt="...">
+            <div class="carousel-caption d-none d-md-block position-absolute">
+                <h1 class="title mb-5">Our Team<span class="point">.</span></h1>
+                <p class="subtitle mb-5" >Lorem ipsum dolor, sit amet consectetur adipisicing elit,<br>Aperiam aliquam, expedita fuga.</p>
+                <button class="border-0 px-4 py-3 button me-1">
+                    Read More
+                    <div class="border-button d-inline">
+                        <i class=" fas fa-long-arrow-alt-right ms-2"></i>
+                    </div>
+                    
+                </button>
+                <button class="border-0 px-4 py-3 button ms-1">
+                    Purchase
+                    <div class="border-button d-inline">
+                        <i class=" fas fa-long-arrow-alt-right ms-2"></i>    
+                    </div>
+                    
+                </button>
             </div>
         </div>
         <div class="carousel-item">
-            <img src="../assets/img/rev-slider-main-home-img-03.jpg" class="d-block w-100" alt="...">
-            <div class="carousel-caption d-none d-md-block">
-                <h5>Second slide label</h5>
-                <p>Some representative placeholder content for the second slide.</p>
-            </div>
+            <img src="../assets/img/rev-slider-main-home-img-02.png" class="d-block w-100" alt="...">
         </div>
     </div>
-    <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide="prev">
-        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+    <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide="prev" data-interval="false">
+        <span class="sx-arrow fas fa-long-arrow-alt-left carousel-control-prev-icon" aria-hidden="true"></span>
 
     </button>
-    <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide="next">
-        <span class="carousel-control-next-icon" aria-hidden="true"></span>
+    <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide="next" data-interval="false">
+        <span class="dx-arrow fas fa-long-arrow-alt-right carousel-control-next-icon " aria-hidden="true"></span>
     </button>
 </div>
+    <!-- First Section -->
+<div class="container-80 text-center my-5 d-flex flex-column align-items-center">
+        <h2 class="section-title m-0">Our specialities<span class="point">.</span></h2>
+        <h5 class="subtitle my-2">Lorem ipsum dolor sit amet consectetur adipisicing elit.</h5>
+        <div class="line mt-2"></div>
+</div>
+    <!-- Features -->
+<div class="container-80">
+    <ul class="list-unstyled list-inline row justify-content-center gx-3 ">
+        <li class="d-flex flex-column list-inline-item align-items-center col-3 p-3 m-0">
+            <img class="p-5" src="../assets/img/svg-0.svg" alt="">
+            <h3 class="features-title">Knowing</h3>
+            <p class="features-caption text-center">Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
+        </li>
+        <li class="d-flex flex-column list-inline-item align-items-center col-3 p-3 m-0">
+            <img class="p-5" src="../assets/img/svg-1.svg" alt="">
+            <h3 class="features-title">Selling</h3>
+            <p class="features-caption text-center">Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
+        </li>
+        <li class="d-flex flex-column list-inline-item align-items-center col-3 p-3 m-0">
+            <img class="p-5" src="../assets/img/svg-2.svg" alt="">
+            <h3 class="features-title">Learning</h3>
+            <p class="features-caption text-center">Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
+        </li>
+        <li class="d-flex flex-column list-inline-item align-items-center col-3 p-3 m-0">
+            <img class="p-5" src="../assets/img/svg-3.svg" alt="">
+            <h3 class="features-title">Contact</h3>
+            <p class="features-caption text-center">Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
+        </li>
+    </ul>
+</div>  
+    <!-- Second Section -->
+<div class="container-80 mt-10 bg-image">
+    <div class="row align-items-center position-relative ">
+        <div class="col-6">
+            <img class="image-team" src="../assets/img/h1-img-01.jpg" alt=""> 
+        </div>
+        <div class="col-4 blank p-5">
+            <h2 class="team">Jason Bickford</h2>
+            <p class="team-subtitle">Founder and Executive Director </p>
+            <div class="line my-4"></div>
+            <p class="features-caption">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Exercitationem commodi quam doloremque illum ipsam error, veritatis.</p>
+            <div class="d-flex gap-3">
+                <div class="rounded-circle social position-relative">
+                    <i class="social-icon fab fa-linkedin-in"></i>
+                </div>
+                <div class="rounded-circle social position-relative">
+                    <i class="social-icon fab fa-facebook-f"></i>
+                </div>
+                <div class="rounded-circle social position-relative">
+                    <i class="social-icon fab fa-twitter"></i>
+                </div>
+            </div>
+
+        </div>
+
+    </div>
+    
+</div>
+
+
 
 </main>
 </template>
@@ -40,5 +112,109 @@ name: 'Main',
 </script>
 
 <style>
-
+.title{
+    font-size: 4em;
+    color: black;
+    font-family: 'Times New Roman', Times, serif;
+    font-weight: 700;
+}
+.subtitle{
+    color: #555555 ;
+    font-size: 0.9em;
+    font-weight: 300;
+}
+.section-title{
+    font-size: 2em;
+    color: black;
+    font-family: 'Times New Roman', Times, serif;
+    font-weight: 700; 
+}
+h2{
+    font-size: 2em;
+    color: black;
+}
+.features-title{
+    font-size: 1.4em;
+    color: black;
+    font-family: 'Times New Roman', Times, serif;
+    font-weight: 500;
+}
+.features-caption{
+    color: #555555 ;
+    font-size: 0.8em;
+    font-weight: 300;
+}
+.dx-arrow, .sx-arrow{
+    color: black;
+    font-size: 2em;
+}
+.carousel-control-next-icon, .carousel-control-prev-icon{
+    background-image: none !important;
+}
+.carousel-caption{
+    top: 35%;
+    left: -40%;
+    transform: translate(-30%);
+}
+.border-button{
+    
+    border-left: solid black 1px;
+}
+.button{
+    background-color: #e1e1e1;
+}
+.button:hover{
+    background-color: #ff4612;
+    color: white;   
+    border-left: solid white 1px;
+}
+.container-80{
+    width: 80%;
+    margin: 0 auto;
+}
+.line{ 
+    width: 5%;
+    border-bottom: solid #ff4612 2px;
+}
+.image-team{
+    width: 100%;
+}
+.team{
+font-size: 2.5em;
+    color: black;
+    font-family: 'Times New Roman', Times, serif;
+    font-weight: 700;
+}
+.team-subtitle{
+    color: #555555 ;
+    font-size: 0.9em;
+    font-weight: 300;
+} 
+.blank{
+    height: 80%;
+    background-color: white;
+    position: absolute;
+    right: 25%;
+}
+.social{
+    width: 30px;
+    height: 30px;
+    background-color: #ff4612;
+}
+.social-icon {
+    color: white;
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+}
+.bg-image{
+    background-repeat: no-repeat;
+    background-position-x: 55em;
+    background-position-y: 10em;
+    background-image: url("../assets/img/svg-4.svg");
+}
+.mt-10{
+    padding-top: 20em;
+}
 </style>

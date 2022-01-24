@@ -1,8 +1,13 @@
 html{
-    font-size: 100%;
+    // font-size: 100%;
     font-family: $fontFamily;
 }
 header{
     height: 50px;
     background-color: $bg-1;
 }
+.point{
+    color: $txt-color-8;
+    font-size: em;
+}
+
