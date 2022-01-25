@@ -165,7 +165,7 @@
         </div>
 </div>
     <!-- Sezione Creative -->
-    <div class="container pt-5">
+    <div class="container py-5">
         <div class="row">
             <div class="container-80 d-flex">
                 <div class="col-6 pe-5">
@@ -215,7 +215,81 @@
             </div>
         </div>
     </div>
-
+<!-- Sezione News -->
+<div class="container mt-5">
+    <div class="row row-cols-10">
+        <div class="container-80 d-flex flex-column align-items-center">
+            <h2 class="section-title m-0">Latest News<span class="point">.</span></h2>
+            <h5 class="subtitle my-2">Lorem ipsum dolor sit amet consectetur adipisicing elit.</h5>
+            <div class="line mt-2"></div>
+            <div class="d-flex justify-content-around mt-5 ">
+                <div class="card col-3 border-0">
+                    <div class="crop w-100">
+                        <img class="w-100 " src="../assets/img/h1-blog-img-02.jpg" alt="">
+                    </div>
+                    <div class="crop-down w-100 position-relative ">
+                        <img class="w-100 position-absolute bottom-0 start-0" src="../assets/img/h1-blog-img-03.jpg" alt="">
+                    </div>
+                    <div class="bg-orange position-absolute d-flex align-items-center justify-content-center p-2 orange-label ">
+                            <i class="text-light fas fa-tag"></i>
+                            <p class="text-light m-0 ps-1">Business, Leading</p>
+                    </div>
+                    <div class="d-flex align-items-center justify-content-start py-3 ">
+                            <i class="far fa-clock orange team-subtitle"></i>
+                            <p class="m-0 px-2 team-subtitle">May 5, 2019 </p>
+                            <i class="orange far fa-user team-subtitle"></i>
+                            <p class="m-0 ps-2 team-subtitle">Amanda Doe</p>
+                    </div>
+                    <h3 class="event-title">Next Investment</h3>
+                    <p class="features-caption">Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
+                    <a class="text-decoration-none text-dark fw-bolder" href="#">Read More</a>
+                </div>
+                <div class="card col-3 border-0">
+                    <div class="crop w-100">
+                        <img class="w-100 " src="../assets/img/h1-blog-img-03.jpg" alt="">
+                    </div>
+                    <div class="crop-down w-100 position-relative">
+                        <img class="w-100 position-absolute bottom-0 start-0" src="../assets/img/h1-blog-img-04.jpg" alt="">
+                        </div>
+                    <div class="bg-orange position-absolute d-flex align-items-center justify-content-center p-2 orange-label ">
+                            <i class="text-light fas fa-tag"></i>
+                            <p class="text-light m-0 ps-1">Business, Leading</p>
+                    </div>
+                    <div class="d-flex align-items-center justify-content-start py-3 ">
+                            <i class="far fa-clock orange team-subtitle"></i>
+                            <p class="m-0 px-2 team-subtitle">May 5, 2019 </p>
+                            <i class="orange far fa-user team-subtitle"></i>
+                            <p class="m-0 ps-2 team-subtitle">Amanda Doe</p>
+                    </div>
+                    <h3 class="event-title">Team Building</h3>
+                    <p class="features-caption">Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
+                    <a class="text-decoration-none text-dark fw-bolder" href="#">Read More</a>
+                </div>
+                <div class="card col-3 border-0">
+                    <div class="crop w-100">
+                        <img class="w-100 " src="../assets/img/h1-blog-img-04.jpg" alt="">
+                    </div>
+                    <div class="crop-down w-100 position-relative">
+                        <img class="w-100 position-absolute bottom-0 start-0" src="../assets/img/h1-blog-img-01.jpg" alt="">
+                    </div>
+                    <div class="bg-orange position-absolute d-flex align-items-center justify-content-center p-2 orange-label ">
+                            <i class="text-light fas fa-tag"></i>
+                            <p class="text-light m-0 ps-1">Business, Leading</p>
+                    </div>
+                    <div class="d-flex align-items-center justify-content-start py-3 ">
+                            <i class="far fa-clock orange team-subtitle"></i>
+                            <p class="m-0 px-2 team-subtitle">May 5, 2019 </p>
+                            <i class="orange far fa-user team-subtitle"></i>
+                            <p class="m-0 ps-2 team-subtitle">Amanda Doe</p>
+                    </div>
+                    <h3 class="event-title">New Business Day</h3>
+                    <p class="features-caption">Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
+                    <a class="text-decoration-none text-dark fw-bolder" href="#">Read More</a>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
 </main>
 </template>
 
@@ -301,7 +375,7 @@ h2{
 }
 .team-subtitle{
     color: #555555 ;
-    font-size: 0.9em;
+    font-size: 0.8em;
     font-weight: 300;
 } 
 .blank{
@@ -391,5 +465,18 @@ cursor: pointer;
 }
 .height-bar{
     height: 0.5em!important;
+}
+.crop{
+    height: 80px;
+    overflow: hidden;
+}
+.crop-down{
+    height: 140px;
+    overflow: hidden;
+}
+.orange-label{
+    bottom: 37%;
+    right: 5%;
+    font-size: 0.7em;
 }
 </style>
