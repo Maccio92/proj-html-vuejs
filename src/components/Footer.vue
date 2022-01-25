@@ -56,11 +56,18 @@
                     <i class="fas fa-map-marker-alt orange"></i>
                     <p class="my-2 ps-2 footer-text">everlead@mikado.com</p>
                 </div> 
+                <div class="d-flex border-bottom align-items-center">
+                    <input type="text" class="form-control border-0 bg-transparent me-2" placeholder="Your Name" aria-label="Username" aria-describedby="basic-addon1">
+                    <a class="text-light text-decoration-none pt-1" href="#">SUBSCRIBE</a>
+                </div>
+                
             </div>
         </div>
         
     </div>
-    <div class="end-bar"></div>
+    <div class="end-bar">
+        <p class="text-light copy">Copyright Everlead@Mikadothemes</p>
+    </div>
 </footer>
 </template>
 
@@ -102,5 +109,9 @@ name: 'Footer',
     font-size: 0.8em;
     font-weight: 300;
     color: #606060;
+}
+.copy{
+    text-align: center;
+    font-size: 0.5em;
 }
 </style>
