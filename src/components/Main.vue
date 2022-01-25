@@ -216,7 +216,7 @@
         </div>
     </div>
     <!-- Sezione News -->
-<div class="container mt-5 bg-image-sx">
+<div class="container my-5 bg-image-sx">
     <div class="row row-cols-10">
         <div class="container-80 d-flex flex-column align-items-center">
             <h2 class="section-title m-0">Latest News<span class="point">.</span></h2>
@@ -293,34 +293,21 @@
     </div>
 </div>
     <!-- Sezione Testimonianze   -->
-    <div class="container-fluid bg-dark p-2 bg-opacity-75">
+    <div class="container-fluid bg-dark p-2 bg-opacity-75 height-300 position-relative">
+        <p class="testimonial float">Testimonials<span class="point">.</span></p>
         <div class="row">
-            <div id="carouselExampleIndicators" class="carousel slide" data-bs-interval="false">
-                <div class="carousel-indicators">
-                    <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
-                    <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="1" aria-label="Slide 2"></button>
-                    <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="2" aria-label="Slide 3"></button>
-                </div>
-                <div class="carousel-inner">
-                    <div class="carousel-item w-25 active">
-                        <img src="../assets/img/h3-img-04.png" class="d-block w-25" alt="...">
-                        <p>Cynthia Clark</p>
-                    </div>
-                    <div class="carousel-item w-25">
-                        <img src="../assets/img/h3-img-07.png" class="d-block w-25" alt="...">
-                    </div>
-                    <div class="carousel-item w-25">
-                        <img src="../assets/img/h3-img-08.png" class="d-block w-25" alt="...">
-                    </div>
-                </div>
-                <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="prev">
-                    <span class="fas fa-long-arrow-alt-left carousel-control-prev-icon" aria-hidden="true"></span>
-                </button>
-                <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="next">
-                    <span class="fas fa-long-arrow-alt-right carousel-control-next-icon" aria-hidden="true"></span>
-                </button>
+            <div class=" position-absolute top-50 start-50 translate-middle m-0 w-50 d-flex flex-column align-items-center">
+                    <img src="../assets/img/h3-img-04.png" class="d-block w-25 p-5" alt="...">
+                    <p class="text-light my-1 testimonial-name ">Cynthia Clark</p>
+                    <p class="text-light fw-light" >Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
             </div>
         </div>
+        <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="prev">
+            <a class="fas fa-long-arrow-alt-left"></a>
+        </button>
+        <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="next">
+            <a class="fas fa-long-arrow-alt-right" ></a>
+        </button>
     </div>
     <!-- Sezione Video -->
     <div class="container-fluid">
@@ -334,6 +321,34 @@
                 </div>
             
                 <i class="text-light fs-1 fas fa-play position-absolute top-50 start-50 translate-middle"></i>
+            </div>
+        </div>
+    </div>
+    <!-- Sezione Contatti -->
+    <div class="container-80 my-5 ">
+        <div class="row row-cols-12 justify-content-around">
+            <div class="col-6 world my-5 position-relative">
+                <div class="position-absolute inner-text p-4">
+                    <p class="m-0">New York Coaching</p>
+                    <a class="text-decoration-none text-dark fw-bolder" href="#">Read More</a>
+                </div>
+                <img class="pointer-1 position-absolute" src="../assets/img/h1-contact-rev-02.png" alt="">
+                <img class="pointer-2 position-absolute"  src="../assets/img/h1-contact-rev-02.png" alt="">
+                <img class="pointer-3 position-absolute"  src="../assets/img/h1-contact-rev-02.png" alt="">
+            </div>
+            <div class="col-6 my-5">
+                <h2 class="section-title mb-3">Contact Us<span class="point">.</span></h2>
+                <div class="line my-2"></div>
+                <p class="features-caption">Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
+                <div class="my-5">
+                    <div class="input-group mb-5">
+                        <input type="text" class="form-control border-0" placeholder="Your Name" aria-label="Username" aria-describedby="basic-addon1">
+                        <input type="text" class="form-control border-0" placeholder="Your Mail" aria-label="Username" aria-describedby="basic-addon1">
+                    </div>
+                    <div class="input-group mb-5">
+                        <input type="text" class="form-control border-0" placeholder="Write a message" aria-label="Username" aria-describedby="basic-addon1">
+                    </div>
+                </div>
             </div>
         </div>
     </div>
@@ -557,5 +572,45 @@ cursor: pointer;
 }
 .fill{
     fill: white
+}
+.height-300{
+    height: 400px;
+}
+.testimonial{
+    text-align: center;
+    font-size: 10em;
+    font-family: 'Times New Roman', Times, serif;
+}
+.testimonial-name{
+    font-family: 'Times New Roman', Times, serif;
+    font-size: 1.5em;
+}
+.world{
+    background-image: url("../assets/img/h1-contact-rev-01.png");
+    background-size: 80%;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+.pointer-1{
+    width: 3%;
+    top: 110px;
+    left: 170px;
+}
+.pointer-2{
+    width: 3%;
+    top: 80px;
+    left: 310px;
+}
+.pointer-3{
+    width: 3%;
+    bottom: 75px;
+    right: 130px;
+}
+.inner-text{
+    width: 200px;
+    height: 100px;
+    top: 140px;
+    left: 160px;
+    background-color: white;
 }
 </style>
