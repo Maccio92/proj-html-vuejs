@@ -19,12 +19,11 @@
                     </div>
                     
                 </button>
-                <button class="border-0 px-4 py-3 button ms-1">
+                <button class="border-0 px-4 py-3 orange-button ms-1">
                     Purchase
                     <div class="border-button d-inline">
                         <i class=" fas fa-long-arrow-alt-right ms-2"></i>    
                     </div>
-                    
                 </button>
             </div>
         </div>
@@ -71,7 +70,7 @@
         </li>
     </ul>
 </div>  
-    <!-- Seconda Sezione -->
+    <!-- Sezione Founder -->
 <div class="container-80 mt-10 mb-8 bg-image-dx">
     <div class="row align-items-center position-relative ">
         <div class="col-6">
@@ -348,8 +347,24 @@
                     <div class="input-group mb-5">
                         <input type="text" class="form-control border-0" placeholder="Write a message" aria-label="Username" aria-describedby="basic-addon1">
                     </div>
+                    <button class="border-0 px-4 py-3 orange-button ms-1 text-light">
+                    Purchase
+                    <div class="border-button d-inline">
+                        <i class=" fas fa-long-arrow-alt-right ms-2"></i>    
+                    </div>
+                </button>
                 </div>
             </div>
+        </div>
+    </div>
+    <!-- Sezione Partner -->
+    <div class="container-80">
+        <div class="row row-cols-10 justify-content-around">
+            <img class="partner-img col-2 p-5" src="../assets/img/h4-clients-img-03.png" alt="">
+            <img class="partner-img col-2 p-5" src="../assets/img/h4-clients-img-05.png" alt="">
+            <img class="partner-img col-2 p-5" src="../assets/img/h4-clients-img-07.png" alt="">
+            <img class="partner-img col-2 p-5" src="../assets/img/h4-clients-img-09.png" alt="">
+            <img class="partner-img col-2 p-5" src="../assets/img/h4-clients-img-01.png" alt="">
         </div>
     </div>
 </main>
@@ -413,11 +428,16 @@ h2{
 .button{
     background-color: #e1e1e1;
 }
-.button:hover{
+.orange-button{
+    background-color: #ff4612;
+}
+.button:hover, .orange-button:hover{
+    cursor: pointer;
     background-color: #ff4612;
     color: white;   
     border-left: solid white 1px;
 }
+
 .container-80{
     width: 80%;
     margin: 0 auto;
@@ -613,4 +633,5 @@ cursor: pointer;
     left: 160px;
     background-color: white;
 }
+
 </style>
