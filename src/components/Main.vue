@@ -72,7 +72,7 @@
     </ul>
 </div>  
     <!-- Seconda Sezione -->
-<div class="container-80 mt-10 mb-8 bg-image">
+<div class="container-80 mt-10 mb-8 bg-image-dx">
     <div class="row align-items-center position-relative ">
         <div class="col-6">
             <img class="image-team" src="../assets/img/h1-img-01.jpg" alt=""> 
@@ -215,14 +215,15 @@
             </div>
         </div>
     </div>
-<!-- Sezione News -->
-<div class="container mt-5">
+    <!-- Sezione News -->
+<div class="container mt-5 bg-image-sx">
     <div class="row row-cols-10">
         <div class="container-80 d-flex flex-column align-items-center">
             <h2 class="section-title m-0">Latest News<span class="point">.</span></h2>
             <h5 class="subtitle my-2">Lorem ipsum dolor sit amet consectetur adipisicing elit.</h5>
             <div class="line mt-2"></div>
-            <div class="d-flex justify-content-around mt-5 ">
+            <div class="d-flex justify-content-around mt-5 align-items-center">
+                <button class="sx-arrow fas fa-long-arrow-alt-left" type="button"></button>
                 <div class="card col-3 border-0">
                     <div class="crop w-100">
                         <img class="w-100 " src="../assets/img/h1-blog-img-02.jpg" alt="">
@@ -286,10 +287,56 @@
                     <p class="features-caption">Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
                     <a class="text-decoration-none text-dark fw-bolder" href="#">Read More</a>
                 </div>
+                <button class="dx-arrow fas fa-long-arrow-alt-right" type="button"></button>
             </div>
         </div>
     </div>
 </div>
+    <!-- Sezione Testimonianze   -->
+    <div class="container-fluid bg-dark p-2 bg-opacity-75">
+        <div class="row">
+            <div id="carouselExampleIndicators" class="carousel slide" data-bs-interval="false">
+                <div class="carousel-indicators">
+                    <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+                    <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="1" aria-label="Slide 2"></button>
+                    <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="2" aria-label="Slide 3"></button>
+                </div>
+                <div class="carousel-inner">
+                    <div class="carousel-item w-25 active">
+                        <img src="../assets/img/h3-img-04.png" class="d-block w-25" alt="...">
+                        <p>Cynthia Clark</p>
+                    </div>
+                    <div class="carousel-item w-25">
+                        <img src="../assets/img/h3-img-07.png" class="d-block w-25" alt="...">
+                    </div>
+                    <div class="carousel-item w-25">
+                        <img src="../assets/img/h3-img-08.png" class="d-block w-25" alt="...">
+                    </div>
+                </div>
+                <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="prev">
+                    <span class="fas fa-long-arrow-alt-left carousel-control-prev-icon" aria-hidden="true"></span>
+                </button>
+                <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="next">
+                    <span class="fas fa-long-arrow-alt-right carousel-control-next-icon" aria-hidden="true"></span>
+                </button>
+            </div>
+        </div>
+    </div>
+    <!-- Sezione Video -->
+    <div class="container-fluid">
+        <div class="row">
+            <div class="bg-video">
+                <div class="position-absolute svg-icon-1 d-flex align-items-center justify-content-center">
+                    <img class="w-50 fill" src="../assets/img/svg-8.svg" alt="">
+                </div>
+                <div  class=" position-absolute svg-icon-2 d-flex align-items-center justify-content-center">
+                    <img class="w-50" src="../assets/img/svg-7.svg" alt="">
+                </div>
+            
+                <i class="text-light fs-1 fas fa-play position-absolute top-50 start-50 translate-middle"></i>
+            </div>
+        </div>
+    </div>
 </main>
 </template>
 
@@ -400,10 +447,16 @@ h2{
 background-color: black;
 cursor: pointer;
 }
-.bg-image{
+.bg-image-dx{
     background-repeat: no-repeat;
     background-position-x: 55em;
     background-position-y: 10em;
+    background-image: url("../assets/img/svg-4.svg");
+}
+.bg-image-sx{
+    background-repeat: no-repeat;
+    background-position-x: 0;
+    background-position-y: 0;
     background-image: url("../assets/img/svg-4.svg");
 }
 .mt-10{
@@ -478,5 +531,31 @@ cursor: pointer;
     bottom: 37%;
     right: 5%;
     font-size: 0.7em;
+}
+.bg-video{
+    height: 700px;
+    background-image: url("../assets/img/h1-img-04.jpg");
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    position: relative;
+}
+.svg-icon-1{
+    width: 30px;
+    height: 30px;
+    color: white;
+    background-color: #ee2852;
+    top: 0;
+    right:0;
+}
+.svg-icon-2{
+    width: 30px;
+    height: 30px;
+    background-color: white;
+    top: 40px;
+    right:0; 
+}
+.fill{
+    fill: white
 }
 </style>
