@@ -166,7 +166,19 @@
                 <div class="line mt-2"></div>
                 <div class="d-flex justify-content-around mt-5 align-items-center">
                     <button class="sx-arrow fas fa-long-arrow-alt-left" type="button"></button>
-                    <div class="card col-3 border-0">
+                    <News 
+                    v-for="(newItem,index) in news"
+                    :key="index"
+                    :image1="newItem.image1"
+                    :image2="newItem.image2"
+                    :argument1="newItem.argument1"
+                    :argument2="newItem.argument2"
+                    :publication="newItem.publication"
+                    :author="newItem.author"
+                    :newsTitle="newItem.newsTitle"
+                    :newsCaption="newItem.newsCaption"
+                    />
+                    <!-- <div class="card col-3 border-0">
                         <div class="crop w-100">
                             <img class="w-100 " src="../assets/img/h1-blog-img-02.jpg" alt="">
                         </div>
@@ -228,7 +240,7 @@
                         <h3 class="event-title">New Business Day</h3>
                         <p class="features-caption">Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
                         <a class="text-decoration-none text-dark fw-bolder" href="#">Read More</a>
-                    </div>
+                    </div> -->
                     <button class="dx-arrow fas fa-long-arrow-alt-right" type="button"></button>
                 </div>
             </div>
@@ -315,12 +327,14 @@
 
 <script>
 import Features from './Features.vue';
-import Event from './Event.vue'
+import Event from './Event.vue';
+import News from './News.vue';
 export default {
 name: 'Main',
 components:{
     Features,
     Event,
+    News,
 },
 data(){
     return{
@@ -368,6 +382,38 @@ data(){
                 eventTitle:'London Coaching',
                 time:'9:00am - 5:00pm, Jan 21, 2022',
                 address:'Cambridge, MA 02138, USA'
+            }
+        ],
+        news:[
+            {
+                image1: require('../assets/img/h1-blog-img-02.jpg'),
+                image2: require('../assets/img/h1-blog-img-03.jpg'),
+                argument1: 'Business', 
+                argument2: 'Leading',
+                publication:'May 5, 2019',
+                author: 'Amanda Doe',
+                newsTitle: 'Next Investment',
+                newsCaption:'Lorem ipsum dolor sit amet consectetur adipisicing elit.'
+            },
+            {
+                image1: require('../assets/img/h1-blog-img-03.jpg'),
+                image2: require('../assets/img/h1-blog-img-04.jpg'),
+                argument1: 'Business', 
+                argument2: 'Leading',
+                publication:'May 5, 2019',
+                author: 'Amanda Doe',
+                newsTitle: 'Team Building',
+                newsCaption:'Lorem ipsum dolor sit amet consectetur adipisicing elit.'
+            },
+            {
+                image1: require('../assets/img/h1-blog-img-03.jpg'),
+                image2: require('../assets/img/h1-blog-img-04.jpg'),
+                argument1: 'Business', 
+                argument2: 'Leading',
+                publication:'May 5, 2019',
+                author: 'Amanda Doe',
+                newsTitle: 'New Business Day',
+                newsCaption:'Lorem ipsum dolor sit amet consectetur adipisicing elit.'
             }
         ]
     }
@@ -450,7 +496,6 @@ data(){
     background-position-x: 0;
     background-position-y: 0;
     background-image: url("../assets/img/svg-4.svg");
-    background-size: cover;
 }
 .bg-events{
     height: 1000px;
