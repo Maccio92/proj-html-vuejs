@@ -1,5 +1,8 @@
 <template>
 <main>
+    <a href="#" class="scrollToTop arrow">
+        <i href="#" class=" text-orange fas fa-long-arrow-alt-up"></i>
+    </a>
     <!-- Jumbotron -->
     <div id="carouselExampleCaptions" class="carousel slide" data-bs-interval="false">
         <div class="carousel-indicators">
@@ -648,6 +651,19 @@ cursor: pointer;
     top: 52%;
     left: 25%;
     background-color: white;
+}
+.arrow{
+    background-color: white;
+    width: 30px;
+    height: 30px;
+    border-radius: 50px;
+    position:fixed;
+    bottom:20px;
+    right:20px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    z-index: 5;
 }
 
 </style>
