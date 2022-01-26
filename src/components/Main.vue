@@ -44,7 +44,7 @@
         <div class="row" >
             <h2 class="section-title m-0">Our specialities<span class="point">.</span></h2>
             <h5 class="subtitle my-2">Lorem ipsum dolor sit amet consectetur adipisicing elit.</h5>
-            <div class="line mt-2"></div>
+            <div class="line-center mt-2"></div>
         </div>
     </div>
     <!-- Features -->
@@ -598,10 +598,13 @@ cursor: pointer;
 // Linea Arancione
 .line{ 
     width: 10%!important;
-    margin: 0 auto;
     border-bottom: solid #ff4612 2px;
 }
-
+.line-center{
+    width: 10%!important;
+    border-bottom: solid #ff4612 2px;
+    margin: 0 auto;
+}
 
 .blank{
     height: 80%;
@@ -646,4 +649,5 @@ cursor: pointer;
     left: 25%;
     background-color: white;
 }
+
 </style>

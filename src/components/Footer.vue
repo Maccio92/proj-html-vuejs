@@ -34,34 +34,22 @@
                 <h2 class="data-light">Important Links</h2>
                 <div class="line my-4"></div>
                 <ul class="list-unstyled">
-                    <li><a class="text-decoration-none features-caption" href="#">About me</a>  </li>
-                    <li><a class="text-decoration-none features-caption" href="#">About us</a>  </li>
-                    <li><a class="text-decoration-none features-caption" href="#">Language packs</a>  </li>
-                    <li><a class="text-decoration-none features-caption" href="#">Become a coach</a>  </li>
-                    <li><a class="text-decoration-none features-caption" href="#">Monthly events</a>  </li>
+                    <FooterMenu 
+                    v-for="(item,index) in footerMenu"
+                    :key="index"
+                    :link="item.href"
+                    :name="item.name"
+                    />
                 </ul> 
             </div>
-            <div class="col-2">
-                <h2 class="data-light">Contact Me</h2>
-                <div class="line my-4"></div>
-                <div class="d-flex align-items-center">
-                    <i class="far fa-clock text-orange"></i>
-                    <p class="my-2 ps-2 features-caption">457 BigBlue Street, NY 10013</p>
-                </div>
-                <div class="d-flex align-items-center">
-                    <i class="fas fa-phone-alt text-orange"></i>
-                    <p class="my-2 ps-2 features-caption">(315)5512-2579</p>
-                </div>
-                <div class="d-flex align-items-center mb-2 ">
-                    <i class="fas fa-map-marker-alt text-orange"></i>
-                    <p class="my-2 ps-2 features-caption-">everlead@mikado.com</p>
-                </div> 
-                <div class="d-flex border-bottom align-items-center">
-                    <input type="text" class="form-control border-0 bg-transparent me-2" placeholder="Your Name" aria-label="Username" aria-describedby="basic-addon1">
-                    <a class="text-light text-decoration-none pt-1" href="#">SUBSCRIBE</a>
-                </div>
-                
-            </div>
+            <FooterContact
+            v-for="(contact,index) in footerContact"
+            :key="index"
+            :menuTitle="contact.title"
+            :location="contact.location"
+            :phone="contact.number"
+            :mail="contact.mail"
+            />
         </div>
         
     </div>
@@ -72,8 +60,50 @@
 </template>
 
 <script>
+import FooterMenu from './FooterMenu.vue';
+import FooterContact from './FooterContact.vue';
+
 export default {
 name: 'Footer',
+components:{
+    FooterContact,
+    FooterMenu,
+    },
+    data(){
+        return{
+            footerContact:[
+                {
+                    title:'Contact Me',
+                    location: '457 BigBlue Street, NY 10013',
+                    number: '(315)5512-2579',
+                    mail:'everlead@mikado.com'
+                }
+
+            ],
+            footerMenu: [
+                {
+                    href: "#",
+                    name: "About Me",
+                },
+                {
+                    href: "#",
+                    name: "About us",
+                },
+                {
+                    href: "#",
+                    name: "Language packs",
+                },
+                {
+                    href: "#",
+                    name: "Become a coach",
+                },
+                {
+                    href: "#",
+                    name: "Monthly events",
+                },
+            ]
+        }
+    }
 }
 </script>
 
@@ -102,5 +132,8 @@ name: 'Footer',
 .copy{
     text-align: center;
     font-size: 0.5em;
+}
+.line{
+    margin: 0;
 }
 </style>
