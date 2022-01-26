@@ -3,7 +3,7 @@
     <div class="footer container-fluid d-flex align-items-center justify-content-center py-5">
         <div class="row row-cols-12 justify-content-center">
             <div class="col-2">
-                <h2 class="footer-title">About</h2>
+                <h2 class="data-light">About</h2>
                 <div class="line my-4"></div>
                 <p class="features-caption">Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
                 <div class="d-flex gap-3 my-4">
@@ -19,42 +19,42 @@
             </div>     
             </div>
             <div class="col-2">
-                <h2 class="footer-title">Twitter</h2>
+                <h2 class="data-light">Twitter</h2>
                 <div class="line my-4"></div>
                 <div class="d-flex align-items-start ">
-                    <i class="fab fa-twitter orange me-1"></i>
-                    <p class="footer-text">Lorem ipsum dolor sit amet consectetur adipisicing elit. In fugiat commodi eveniet, est debitis nesciunt non blanditiis ducimus iusto.</p>  
+                    <i class="fab fa-twitter text-orange me-1"></i>
+                    <p class="features-caption">Lorem ipsum dolor sit amet consectetur adipisicing elit. In fugiat commodi eveniet, est debitis nesciunt non blanditiis ducimus iusto.</p>  
                 </div>
                 <div class="d-flex">
-                    <i class=" fab fa-twitter orange me-1"></i>
-                    <p class="footer-text">orem ipsum dolor sit amet consectetur adipisicing elit. In fugiat commodi eveniet, est debitis nesciunt non blanditiis ducimus iusto.</p>  
+                    <i class=" fab fa-twitter text-orange me-1"></i>
+                    <p class="features-caption">orem ipsum dolor sit amet consectetur adipisicing elit. In fugiat commodi eveniet, est debitis nesciunt non blanditiis ducimus iusto.</p>  
                 </div>
             </div>
             <div class="col-2">
-                <h2 class="footer-title">Important Links</h2>
+                <h2 class="data-light">Important Links</h2>
                 <div class="line my-4"></div>
                 <ul class="list-unstyled">
-                    <li><a class="text-decoration-none footer-text" href="#">About me</a>  </li>
-                    <li><a class="text-decoration-none footer-text" href="#">About us</a>  </li>
-                    <li><a class="text-decoration-none footer-text" href="#">Language packs</a>  </li>
-                    <li><a class="text-decoration-none footer-text" href="#">Become a coach</a>  </li>
-                    <li><a class="text-decoration-none footer-text" href="#">Monthly events</a>  </li>
+                    <li><a class="text-decoration-none features-caption" href="#">About me</a>  </li>
+                    <li><a class="text-decoration-none features-caption" href="#">About us</a>  </li>
+                    <li><a class="text-decoration-none features-caption" href="#">Language packs</a>  </li>
+                    <li><a class="text-decoration-none features-caption" href="#">Become a coach</a>  </li>
+                    <li><a class="text-decoration-none features-caption" href="#">Monthly events</a>  </li>
                 </ul> 
             </div>
             <div class="col-2">
-                <h2 class="footer-title">Contact Me</h2>
+                <h2 class="data-light">Contact Me</h2>
                 <div class="line my-4"></div>
                 <div class="d-flex align-items-center">
-                    <i class="far fa-clock orange"></i>
-                    <p class="my-2 ps-2 footer-text">457 BigBlue Street, NY 10013</p>
+                    <i class="far fa-clock text-orange"></i>
+                    <p class="my-2 ps-2 features-caption">457 BigBlue Street, NY 10013</p>
                 </div>
                 <div class="d-flex align-items-center">
-                    <i class="fas fa-phone-alt orange"></i>
-                    <p class="my-2 ps-2 footer-text">(315)5512-2579</p>
+                    <i class="fas fa-phone-alt text-orange"></i>
+                    <p class="my-2 ps-2 features-caption">(315)5512-2579</p>
                 </div>
                 <div class="d-flex align-items-center mb-2 ">
-                    <i class="fas fa-map-marker-alt orange"></i>
-                    <p class="my-2 ps-2 footer-text">everlead@mikado.com</p>
+                    <i class="fas fa-map-marker-alt text-orange"></i>
+                    <p class="my-2 ps-2 features-caption-">everlead@mikado.com</p>
                 </div> 
                 <div class="d-flex border-bottom align-items-center">
                     <input type="text" class="form-control border-0 bg-transparent me-2" placeholder="Your Name" aria-label="Username" aria-describedby="basic-addon1">
@@ -79,17 +79,11 @@ name: 'Footer',
 
 <style lang="scss" scoped>
 .footer{
-    // height: 300px;
     background-color: #191516 ;
 }
 .end-bar{
         height: 20px;
         background-color: #ff4612;
-}
-.footer-title{
-    color: white;
-    font-family: 'Times New Roman', Times, serif;
-    font-size: 1em;
 }
 .line{ 
     width: 20%;
@@ -104,11 +98,6 @@ name: 'Footer',
     left: 50%;
     top: 50%;
     transform: translate(-50%, -50%);
-}
-.footer-text{
-    font-size: 0.8em;
-    font-weight: 300;
-    color: #606060;
 }
 .copy{
     text-align: center;

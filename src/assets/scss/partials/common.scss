@@ -1,13 +1,60 @@
 html{
-    // font-size: 100%;
     font-family: $fontFamily;
 }
 header{
     height: 50px;
     background-color: $bg-1;
 }
+// Puntino arancione
 .point{
     color: $txt-color-8;
     font-size: 1em;
 }
+.container-80{
+    width: 80%;
+    margin: 0 auto;
+}
 
+// Text
+.text-black{
+    color: $txt-color-14;
+}
+.section-title{
+    font-size: $txt-3;
+    color: $txt-color-14;
+    font-family: 'Times New Roman', Times, serif;;
+    font-weight: 700; 
+}
+.text-orange{
+    color: $bg-6;
+}
+.features-caption{
+    color: $txt-color-10;
+    font-size: $txt-9;
+    font-weight: 300;
+}
+.features-title{
+    font-size: $txt-5;
+    color: $txt-color-14;
+    font-family: 'Times New Roman', Times, serif;
+    font-weight: 500;
+}
+.data{
+    color: $txt-color-1;
+    font-size: $txt-6;
+    margin: 0;
+    font-weight: 800;
+    font-family: 'Times New Roman', Times, serif;
+}
+.data-light{
+    color: $txt-color-1;
+    font-size: $txt-7;
+    margin: 0;
+    font-weight: 300;
+    font-family: 'Times New Roman', Times, serif;
+}
+
+// Background
+.bg-orange{
+    background-color: $bg-6!important;
+}
