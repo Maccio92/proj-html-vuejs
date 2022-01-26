@@ -314,12 +314,14 @@
     </div>
     <!-- Sezione Partner -->
     <div class="container-80">
-        <div class="row row-cols-10 justify-content-around">
-            <img class="partner-img col-2 p-5" src="../assets/img/h4-clients-img-03.png" alt="">
-            <img class="partner-img col-2 p-5" src="../assets/img/h4-clients-img-05.png" alt="">
-            <img class="partner-img col-2 p-5" src="../assets/img/h4-clients-img-07.png" alt="">
-            <img class="partner-img col-2 p-5" src="../assets/img/h4-clients-img-09.png" alt="">
-            <img class="partner-img col-2 p-5" src="../assets/img/h4-clients-img-01.png" alt="">
+        <div class="row row-cols-10 justify-content-center">
+            <ul class="list-unstyled list-inline d-flex justify-content-around ">
+                <Partner 
+                v-for="(image,index) in partnerImg"
+                :key="index"
+                :image="image.image"
+                />
+            </ul>
         </div>
     </div>
 </main>
@@ -329,12 +331,14 @@
 import Features from './Features.vue';
 import Event from './Event.vue';
 import News from './News.vue';
+import Partner from './Partner.vue';
 export default {
 name: 'Main',
 components:{
     Features,
     Event,
     News,
+    Partner,
 },
 data(){
     return{
@@ -415,6 +419,24 @@ data(){
                 newsTitle: 'New Business Day',
                 newsCaption:'Lorem ipsum dolor sit amet consectetur adipisicing elit.'
             }
+        ],
+        partnerImg:[
+            {
+                image: require('../assets/img/h4-clients-img-03.png'),
+            },
+            {
+                image: require('../assets/img/h4-clients-img-05.png'),
+            },
+            {
+                image: require('../assets/img/h4-clients-img-07.png'),
+            },
+            {
+                image: require('../assets/img/h4-clients-img-09.png'),
+            },
+            {
+                image: require('../assets/img/h4-clients-img-01.png'),
+            }
+            
         ]
     }
 }
