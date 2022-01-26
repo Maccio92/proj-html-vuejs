@@ -91,61 +91,15 @@
                     <div class="bg-light p-5">
                         <h3 class="event-title mb-5">Upcoming Events</h3>
                         <ul class="list-unstyled">
-                            <li class="d-flex mb-5 ">
-                                <div class="data-container d-flex flex-column justify-content-center align-items-center">
-                                    <p class="data">07</p>
-                                    <p class="data-light">Jan 2022</p>
-                                </div>
-                                <div class="ps-3">
-                                    <h4 class="features-title">Melbourne Coaching</h4>
-                                    <div class="d-flex align-items-center">
-                                        <i class="far fa-clock text-orange"></i>
-                                    <p class="m-0 ps-2">9:00am - 5:00pm, Jan 7, 2022</p>
-                                    </div>
-                                    <div class="d-flex align-items-center mb-2 ">
-                                        <i class="fas fa-map-marker-alt text-orange"></i>
-                                    <p class="m-0 ps-2">Cambridge, MA 02138, USA</p>
-                                    </div>
-                                    <a class="text-decoration-none text-dark fw-bolder" href="#">Read More</a>
-                                </div>
-                            </li>
-                            <li class="d-flex mb-5">
-                                <div class="data-container d-flex flex-column justify-content-center align-items-center">
-                                    <p class="data">11</p>
-                                    <p class="data-light">Jan 2022</p>
-                                </div>
-                                <div class="ps-3">
-                                    <h4 class="features-title">New York Coaching</h4>
-                                    <div class="d-flex align-items-center">
-                                        <i class="far fa-clock text-orange"></i>
-                                    <p class="m-0 ps-2">9:00am - 5:00pm, Jan 11, 2022</p>
-                                    </div>
-                                    <div class="d-flex align-items-center mb-2 ">
-                                        <i class="fas fa-map-marker-alt text-orange"></i>
-                                    <p class="m-0 ps-2">Cambridge, MA 02138, USA</p>
-                                    </div>
-                                    <a class="text-decoration-none text-dark fw-bolder" href="#">Read More</a>
-                                </div>
-                            </li>
-                            <li class="d-flex mb-5">
-                                <div class="data-container d-flex flex-column justify-content-center align-items-center">
-                                    <p class="data">21</p>
-                                    <p  class="data-light">Jan 2022</p>
-                                </div>
-                                <div class="ps-3">
-                                    <h4 class="features-title">London Coaching</h4>
-                                    <div class="d-flex align-items-center">
-                                        <i class="far fa-clock text-orange"></i>
-                                    <p class="m-0 ps-2">9:00am - 5:00pm, Jan 21, 2022</p>
-                                    </div>
-                                    <div class="d-flex align-items-center mb-2 ">
-                                        <i class="text-orange fas fa-map-marker-alt "></i>
-                                    <p class="m-0 ps-2">Cambridge, MA 02138, USA</p>
-                                    </div>
-                                    <a class="text-decoration-none text-dark fw-bolder" href="#">Read More</a>
-                                </div>
-                                
-                            </li>
+                            <Event 
+                            v-for="(event,index) in events"
+                            :key="index"
+                                :day="event.day"
+                                :date="event.date"
+                                :eventTitle="event.eventTitle"
+                                :time="event.time"
+                                :address="event.address"
+                                />
                         </ul>
                     </div>
                 </div>
@@ -361,10 +315,12 @@
 
 <script>
 import Features from './Features.vue';
+import Event from './Event.vue'
 export default {
 name: 'Main',
 components:{
     Features,
+    Event,
 },
 data(){
     return{
@@ -390,6 +346,29 @@ data(){
                 caption: 'Lorem ipsum dolor sit amet consectetur adipisicing elit.',
             }
 
+        ],
+        events:[
+            {
+                day: '07',
+                date: 'Jan 2022',
+                eventTitle:'Melbourne Coaching',
+                time:'9:00am - 5:00pm, Jan 7, 2022',
+                address:'Cambridge, MA 02138, USA'
+            },
+            {
+                day: '11',
+                date: 'Jan 2022',
+                eventTitle:'New York Coaching',
+                time:'9:00am - 5:00pm, Jan 11, 2022',
+                address:'Cambridge, MA 02138, USA'
+            },
+            {
+                day: '21',
+                date: 'Jan 2022',
+                eventTitle:'London Coaching',
+                time:'9:00am - 5:00pm, Jan 21, 2022',
+                address:'Cambridge, MA 02138, USA'
+            }
         ]
     }
 }
